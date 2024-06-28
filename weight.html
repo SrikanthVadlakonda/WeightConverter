@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weight</title>
+    <link rel="stylesheet"  href="weight.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script>
+    function check(){
+        var x;
+        x=document.getElementById('in_kg').value;
+        if(isNaN(x)|| x<=0){
+            window.alert("enter number greater than Zero");
+        }
+        else{
+            var num;
+            num = x * 1000;
+            document.getElementById('grams').value = num;
+            num = x * 2.2046;
+            document.getElementById('pounds').value = num;
+            num= x * 1000000;
+            document.getElementById('mg').value = num;
+            num = x * 0.0011023;
+            document.getElementById('US_ton').value = num;
+            num = x * 35.274;
+            document.getElementById('ounce').value = num;
+
+
+
+        }
+    }
+</script>
+</head>
+<body>
+    <div class="container">Weight Converter</div>
+    <form align="center">
+        <table align="center">
+            <tr>
+                <td><label><i class="fa-solid fa-money-bill-transfer"></i> Weight in KG:</label></td>
+                 <td><input type="number" name="kg" id="in_kg"></td>
+            </tr>
+
+            <tr>
+                <td><label><i class="fa-solid fa-money-bill-transfer"></i> Weight in Grams:</label></td>
+                 <td><input type="number" name="in_g" id="grams"></td>
+            </tr>
+
+            <tr>
+                <td><label><i class="fa-solid fa-money-bill-transfer"></i> Pounds:</label></td>
+                 <td><input type="number" name="in_p" id="pounds"></td>
+            </tr>
+
+            <tr>
+                <td><label><i class="fa-solid fa-money-bill-transfer"></i> MilliGram:</label></td>
+                 <td><input type="number" name="in_m" id="mg"></td>
+            </tr>
+
+            <tr>
+                <td><label><i class="fa-solid fa-money-bill-transfer"></i> US Tons:</label></td>
+                 <td><input type="number" name="in_t" id="US_ton"></td>
+            </tr>
+
+            <tr>
+                <td><label><i class="fa-solid fa-money-bill-transfer"></i> 
+                    Ounces:</label></td>
+                 <td><input type="number" name="in_o" id="ounce"></td>
+            </tr>
+        </table>
+        <div class="grams"></div><br>
+        <td><input type="button" value="Convert" name="Submit" onclick="check()"></td>
+
+        <input type="reset" name="reset" value="Reset form">
+        <p><u>Note- You can press reset button for another converstion</u></p>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+body{
+    height: 600px;
+    margin:0;
+    padding: 0;
+    background: url(output-onlinepngtools.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+}
+input[type=number]
+{
+    width:240px;
+    text-align: center;
+    border:2px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0px;
+    margin-top: 5px;
+    transition:border 0.5s;
+    background: #f5f0f0;
+
+}
+form{
+    width: 500px;
+    height: 450px;
+     margin-left: 400px;
+     padding-top: 20px;
+    border: rgb(255, 253, 253) solid;
+    
+   
+}
+table{
+text-align: left;
+}
+.container{
+    width: 280px;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 400px;
+    color:#000000;
+    background: white;
+    text-align:center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+label{
+    font-size: 18px;
+}
+input[type=button]
+{
+    border: 2px solid;
+    background: #f6f6f7;
+    color: rgb(17, 2, 2);
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    margin-left: 170px;
+}
+input[type=button]:hover{
+    background: rgb(14, 240, 6);
+    color: rgb(250, 243, 243);
+}
+input[type=reset]
+{
+    border: 2px solid;
+    background: #f3f1f1;
+    color: rgb(29, 1, 1);
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin-left: 50px;
+}
+input[type=reset]:hover{
+    background: rgb(243, 7, 7);
+    color: rgb(249, 252, 249);
+}
